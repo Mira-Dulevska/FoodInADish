@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -20,9 +21,10 @@ public class Main {
         FoodInADish f5 = new FoodInADish("strawberry","white");
         dishes.add(f5);
 
-        //Arrays.sort(dishes);
+        Collections.sort(dishes);
         for(FoodInADish t : dishes) {
-            System.out.println(t.toString());
+            //System.out.println(t.toString());
+            t.draw();
         }
 
     }
