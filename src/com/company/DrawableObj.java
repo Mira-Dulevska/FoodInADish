@@ -1,13 +1,16 @@
 package com.company;
 
-public abstract class DrawableObj {
+import javax.swing.*;
+
+public abstract class DrawableObj extends JFrame {
 
     private int xCoord;
     private int yCoord;
     private int width;
     private int height;
 
-    public abstract void draw();
+
+    public abstract JPanel draw();
 
     public int getxCoord() {
         return xCoord;
